@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page {
+  width: 920px;
+  margin: 10px 40px;
+}
+
+.page > .container {
+  background-color: white;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px auto;
+      grid-template-rows: 100px auto;
+  gap: 10px;
+}
+
+.image-container {
+  position: relative;
+  padding: 50px 50px;
+  overflow: visible;
+}
+
+.image-container > .desktop-pct {
+  display: none;
+}
+
+.image-container > .mobile-pct {
+  position: relative;
+}
+
+.image-container > .mobile-pct > .pattern-moba {
+  position: absolute;
+  width: 300px;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.image-container > .mobile-pct > .ill-moba {
+  position: absolute;
+  width: 320px;
+  margin-top: -180px;
+  left: 50%;
+  margin-left: -176px;
+}
+
+.faq-container {
+  padding: 50px 12px 20px;
+}
+
+.faq-container > h2 {
+  color: #1d1e35;
+  font-size: 28px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.faq-container > div {
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.faq-container > img {
+  float: right;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 15px 0 15px 0;
+  color: #4a4b5e;
+  text-align: center;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+label:hover {
+  color: #f47c57;
+}
+
+input {
+  vertical-align: middle;
+  display: none;
+}
+
+input:checked ~ .content {
+  height: 64px;
+  opacity: 1;
+}
+
+input:checked ~ label {
+  color: #1d1e35;
+  font-weight: 700;
+}
+
+input:checked ~ label img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.content {
+  padding: 5px 0;
+  color: #787887;
+  font-size: 14px;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.attribution {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 140px 0 -100px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 757px) {
+  .container {
+    height: 500px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45%  55%;
+        grid-template-columns: 45%  55%;
+    gap: 10px;
+  }
+  .image-container > .mobile-pct {
+    display: none;
+  }
+  .image-container > .desktop-pct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .image-container > .desktop-pct > .pattern-desk {
+    position: absolute;
+    top: -420px;
+    left: -600px;
+  }
+  .image-container > .desktop-pct > .ill-desk {
+    position: absolute;
+    left: -200px;
+  }
+  .image-container > .desktop-pct > .box-desk {
+    position: absolute;
+    top: 130px;
+    left: -230px;
+  }
+  .faq-container > h2 {
+    text-align: left;
+  }
+  .faq-container > div > label {
+    text-align: left;
+  }
+  .faq-container > div > .content {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */
